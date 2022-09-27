@@ -18,4 +18,10 @@ public class PlayerController {
         return playerDAO.getAllPlayers();
     }
 
+    PlayerDAO obj = new PlayerDAO();
+    @GetMapping("/playerById")
+    public Player getPlayerDataById(int id){
+        return obj.getPlayerById(id);
+    }
+
 }
