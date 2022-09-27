@@ -1,12 +1,27 @@
-package com.spring.boot.jdbc.SpringBootJDBCProject;
+package com.spring.boot.jdbc.SpringBootJDBCProject.Entity;
+//import org.hibernate.annotations.Table;
+
+import javax.persistence.*;
 import java.util.Date;
 
+
+@Entity                 // Rowmapping(create schema/Database)
+@Table(name="Player")
 public class Player {
+    @Id
+    @GeneratedValue
     private int id;
+    // auto generated on new row insertion
+
+    @Column(name="Name")
     private String name;
+    @Column(name="Age")
     private int age;
+    @Column(name="Nationality")
     private String nationality;
+    @Column(name="DOB")
     private Date dob;
+    @Column(name="Designation")
     private int designation;
 
     public Player() {
@@ -20,6 +35,17 @@ public class Player {
         this.dob = dob;
         this.designation = designation;
     }
+
+
+    //without id constructor
+    public Player(String name, int age, String nationality, Date dob, int designation) {
+        this.name = name;
+        this.age = age;
+        this.nationality = nationality;
+        this.dob = dob;
+        this.designation = designation;
+    }
+
 
     public int getid() {
         return id;
