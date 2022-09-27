@@ -23,8 +23,8 @@ public class PlayerDAO {
         String getPlayerQuery = "select * from Player";
 
         // JDBC Template -> Query -> DB -> Result Set -> Row Mapped -> Player.class -> List<Object>
-        return jdbcTemplate.query(getPlayerQuery,new BeanPropertyRowMapper<Player>(Player.class));
-//        return jdbcTemplate.query(getPlayerQuery,new PlayerMapper());
+//        return jdbcTemplate.query(getPlayerQuery,new BeanPropertyRowMapper<Player>(Player.class));
+        return jdbcTemplate.query(getPlayerQuery,new PlayerMapper());
     }
 
     // getPlayer By Id
@@ -41,7 +41,7 @@ public class PlayerDAO {
         String insertPlayerQuery = "insert into Player values (?, ?, ?, ?, ?, ?)";
 
         // result: 1:success, 0: failure
-        return jdbcTemplate.update(insertPlayerQuery,new PlayerMapper(), new Object[]{player.getid(),
+        return jdbcTemplate.update(insertPlayerQuery, new Object[]{player.getid(),
         player.getName(), player.getAge(), player.getNationality(), new Timestamp(player.getDob().getTime()),
         player.getDesignation()});
     }
@@ -51,7 +51,7 @@ public class PlayerDAO {
     public int updatePlayerInfo(Player player){
         String updatePlayerQuery = "update player "+"set name = ?, age = ?, designation = ?"+"where id = ?";
 
-        return jdbcTemplate.update(updatePlayerQuery,new PlayerMapper(), new Object[]{
+        return jdbcTemplate.update(updatePlayerQuery, new Object[]{
                 player.getName(), player.getAge(),
                 player.getDesignation(),player.getid()});
 
@@ -65,7 +65,7 @@ public class PlayerDAO {
     public int deletePlayer(int id){
         String deletePlayerQuery = "delete from Player where id = ?";
 
-        return jdbcTemplate.update(deletePlayerQuery,new PlayerMapper(), new Object[]{id});
+        return jdbcTemplate.update(deletePlayerQuery,new Object[]{id});
     }
 
 

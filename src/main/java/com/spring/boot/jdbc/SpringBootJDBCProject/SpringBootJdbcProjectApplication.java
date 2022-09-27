@@ -15,7 +15,7 @@ public class SpringBootJdbcProjectApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("-------GET All PLAYER------------");
+		System.out.println("\n\n-------GET All PLAYER------------");
 		System.out.println(dao.getAllPlayers());
 
 		System.out.println("-------GET PLAYER BY ID------------");
