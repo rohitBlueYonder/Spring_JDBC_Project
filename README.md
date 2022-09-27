@@ -37,3 +37,37 @@ JPA Layer:
 https://drive.google.com/file/d/17oghBGETMLB6HeFLVZiI1QQfSXEpor2R/view?usp=sharing
 
 --------------------------------------------------------------------
+REST API
+
+HTTP => Hyper Text Transfer Protocol
+
+
+Hypermedia Information, Collaborative Media => TCP Connections by default on PORT 80
+
+
+Stateless => No Particular Form => HTML, JSON, XML, PDF, PNG, JPEG => Data Exchange
+
+Statefull  => Restful API => JSON, XML => Proper Form
+
+
+URL + HTTP + Restful API
+
+
+URL: Location your server => 192.168.8.8:8080 => Flipkart.com
+
+HTTP: TCP by 80 => Stateless => Data Exchange between your server and client
+
+Restful API => Representational State Transfer => It should make sense
+
+Client And Server
+
+Browser App <=> Spring Boot App
+
+URL + HTTP + Restful API[JSON,XML]
+
+Weather App => Client => Request Temperature of Mumbai => Weather Data Its raining
+
+GoogleMaps => Server => Response Temperature of Mumbai
+
+Location: Mumbai
+Temperature: 80 celsius

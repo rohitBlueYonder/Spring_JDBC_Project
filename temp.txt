@@ -18,3 +18,27 @@ INSERT INTO Player VALUES (1 , 'Rohit' , 23 , 'Indian' , '1999-08-01' , 1 );
 INSERT INTO Player VALUES (2 , 'Mohit' , 25 , 'Indian' , '1999-08-01' , 2 );
 INSERT INTO Player VALUES (3 , 'Anjali' , 24 , 'Indian' , '1999-08-01' , 1 );
 INSERT INTO Player VALUES (4 , 'Mansha' , 22, 'Indian' , '1999-08-01' , 2 );
+
+
+
+SQL DB connectivity: applicaiton.properties
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=test
+spring.datasource.password=test
+spring.h2.console.enabled=true
+spring.h2.console.setting.web-allow-others=true
+spring.jpa.show-sql=true
+
+
+Extra Connectivity:
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=test
+spring.datasource.password=test
+spring.h2.console.enabled=true
+spring.h2.console.settings.web-allow-others=true
+spring.jpa.show-sql=true
+#mongodb+srv://pratham520:<>@cluster0.pe7oqtx.mongodb.net/?retryWrites=true&w=majority
