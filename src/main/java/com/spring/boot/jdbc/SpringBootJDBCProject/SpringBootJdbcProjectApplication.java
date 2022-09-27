@@ -54,7 +54,10 @@ public class SpringBootJdbcProjectApplication implements CommandLineRunner {
 	repo.updatePlayer(new Player(1,"MtEverest" , 28 , "British" , Date.valueOf("1999-05-01") , 2 ));
 
 	// Delete
-	repo.deleteById(2);
+//	repo.deleteById(2);
+
+	// getAllPlayers
+		System.out.println("Printing getAllPlayer: "+repo.getAllPlayers());
 
 
 	}
