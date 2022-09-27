@@ -14,6 +14,7 @@ public class PlayerController {
     PlayerDAO playerDAO;
     @GetMapping("/players")
     public List<Player> getAllPlayers(){
+
         return playerDAO.getAllPlayers();
     }
 
