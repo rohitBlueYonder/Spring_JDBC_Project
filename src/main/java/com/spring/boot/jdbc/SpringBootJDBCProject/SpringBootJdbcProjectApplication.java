@@ -17,10 +17,25 @@ public class SpringBootJdbcProjectApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		System.out.println("-------GET All PLAYER------------");
 		System.out.println(dao.getAllPlayers());
+
 		System.out.println("-------GET PLAYER BY ID------------");
 		System.out.println(dao.getPlayerById(2));
+
 		System.out.println("--------INSERT PLAYER-------------------");
 		System.out.println(dao.insertPlayer(new Player(5, "Shiva", 24, "Indian", new Date(System.currentTimeMillis()), 10 )));
+
+		System.out.println("-------GET All UPDATED PLAYER------------");
+		System.out.println(dao.getAllPlayers());
+
+		System.out.println("-------UPDATE PLAYER BY ID------------");
+		System.out.println(dao.updatePlayerInfo(new Player(5, "Shivu", 20, "Indian", new Date(System.currentTimeMillis()), 2 )));
+
+		System.out.println("-------Delete PLAYER BY ID------------");
+		System.out.println(dao.deletePlayer(3));
+
+		System.out.println("-------GET All UPDATED PLAYER------------");
+		System.out.println(dao.getAllPlayers());
+
 	}
 
 
