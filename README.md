@@ -33,4 +33,7 @@ PlayerDAO.getAllPlayers() =>Communicate with the Database using JDBC Template=> 
 Image:
 https://drive.google.com/file/d/1zh-lA4336Upk4H67mXPlJ_LVnkx16Ko6/view?usp=sharing
 
+JPA Layer:
+https://drive.google.com/file/d/17oghBGETMLB6HeFLVZiI1QQfSXEpor2R/view?usp=sharing
+
 --------------------------------------------------------------------
