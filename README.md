@@ -71,3 +71,12 @@ GoogleMaps => Server => Response Temperature of Mumbai
 
 Location: Mumbai
 Temperature: 80 celsius
+
+Link:
+https://drive.google.com/file/d/1Jpdv77XTyuGgAbOkfHniEOO14I2vI4l-/view?usp=sharing
+
+HTTP Methods
+1. POST => CREATING A RESOURCE => h2Database testdb
+2. GET => READING A RESOURCE => h2Database:testdb
+3. PUT => UPDATING A RESOURCE => h2Database:testdb
+4. DELETE => DELETING A RESOURCE=> h2Database:testdb
