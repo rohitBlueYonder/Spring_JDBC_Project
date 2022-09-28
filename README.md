@@ -85,3 +85,17 @@ HTTP Methods
 2. GET => READING A RESOURCE => h2Database:testdb
 3. PUT => UPDATING A RESOURCE => h2Database:testdb
 4. DELETE => DELETING A RESOURCE=> h2Database:testdb
+
+-------------------------------
+REST APPS
+
+
+JSON DATA BINDING
+
+{
+“name”: value
+}
+
+=> different apps exchange data
+
+=> Jackson Dependency  => POJO(Plain Old Java Object) => Converted => JSON Data Binding
