@@ -44,14 +44,14 @@ public class SpringBootJdbcProjectApplication implements CommandLineRunner {
 	// CRUD without DB queries
 
 	//Insert
-	repo.insertPlayer(new Player("Rohit" , 23 , "Indian" , Date.valueOf("1999-08-01") , 1 ));
-	repo.insertPlayer(new Player( "Mohit" , 28 , "Indian" , Date.valueOf("1999-05-01") , 2 ));
+	repo.insertPlayer(new Player(1,"Rohit" , 25 , "Indian" , Date.valueOf("1997-01-01") , 2 ));
+	repo.insertPlayer(new Player(2, "Shiva" , 24 , "Indian" , Date.valueOf("1998-01-01") , 1 ));
 
 	//Read
 	System.out.println("Printing ID-2 details: "+repo.getPlayerById(2));
 
 	//Update
-	repo.updatePlayer(new Player(1,"MtEverest" , 28 , "British" , Date.valueOf("1999-05-01") , 2 ));
+//	repo.updatePlayer(new Player(1,"MtEverest" , 28 , "British" , Date.valueOf("1999-05-01") , 2 ));
 
 	// Delete
 //	repo.deleteById(2);

@@ -1,6 +1,7 @@
 package com.spring.boot.jdbc.SpringBootJDBCProject.Entity;
 //import org.hibernate.annotations.Table;
 
+import javax.annotation.processing.Generated;
 import javax.persistence.*;
 import java.util.Date;
 
@@ -10,8 +11,10 @@ import java.util.Date;
 @NamedQuery(name="get_all_players", query="select p from Player p")
 @Table(name="Player")
 public class Player {
+
+//    @GeneratedValue
     @Id
-    @GeneratedValue
+    @Column(name = "Id")
     private int id;
     // auto generated on new row insertion
 

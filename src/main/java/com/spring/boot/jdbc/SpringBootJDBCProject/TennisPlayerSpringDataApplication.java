@@ -26,16 +26,16 @@ public class TennisPlayerSpringDataApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        logger.info("\nInserting a Player\n", repo.save(new Player("Rajvir" , 28 , "USA" , Date.valueOf("1999-08-01") , 3 )));
-        logger.info("\nInserting a Player\n", repo.save(new Player("Shiva" , 24 , "British" , Date.valueOf("1999-08-01") , 10 )));
-        logger.info("\nInserting a Player\n", repo.save(new Player("Jitu" , 22 , "USA" , Date.valueOf("1999-08-01") , 2 )));
-        logger.info("\nInserting a Player\n", repo.save(new Player("Rahul" , 28 , "India" , Date.valueOf("1999-08-01") , 1 )));
-
-        logger.info("\nFinding a Player by ID\n", repo.findById(1));
-
-        logger.info("\n Delete by ID\n");
-        repo.deleteById(2);
-
-        logger.info("\n Find all players\n", repo.findAll());
+//        logger.info("\nInserting a Player\n", repo.save(new Player("Rajvir" , 28 , "USA" , Date.valueOf("1999-08-01") , 3 )));
+//        logger.info("\nInserting a Player\n", repo.save(new Player("Shiva" , 24 , "British" , Date.valueOf("1999-08-01") , 10 )));
+//        logger.info("\nInserting a Player\n", repo.save(new Player("Jitu" , 22 , "USA" , Date.valueOf("1999-08-01") , 2 )));
+//        logger.info("\nInserting a Player\n", repo.save(new Player("Rahul" , 28 , "India" , Date.valueOf("1999-08-01") , 1 )));
+//
+//        logger.info("\nFinding a Player by ID\n", repo.findById(1));
+//
+//        logger.info("\n Delete by ID\n");
+//        repo.deleteById(2);
+//
+//        logger.info("\n Find all players\n", repo.findAll());
     }
 }
